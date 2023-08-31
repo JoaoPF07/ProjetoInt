@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./estilo/estilo.css";
+import { Link, Route, Routes } from "react-router-dom";
+import NotFound from "./pages/notfound";
+import LoginEntidade from "./pages/loginentidade";
+import Cadastros from "./pages/cadastro";
+import PaginaInicial from "./pages/paginainicial";
+import AreaEntidade from "./pages/areaentidade";
+import Entidade from "./pages/entidades";
+import DetalhamentoEntidade from "./pages/detalhamentoentidade";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Routes>
+          <Route path="/" element={<PaginaInicial />} />
+          <Route path="/areadaentidade" element={<AreaEntidade />} />
+          <Route path="/login-entidade" element={<LoginEntidade />} />
+          <Route path="/cadastros" element={<Cadastros />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/entidades" element= {<Entidade/>}/>
+          <Route path="/perfil-entidade" element= {<DetalhamentoEntidade />}/>
+        </Routes>
+      </div>
     </div>
   );
 }

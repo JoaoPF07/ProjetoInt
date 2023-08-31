@@ -1,0 +1,532 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Cabeçalho da pagina*/
+
+.cabecalho {
+  margin-right: 0;
+  width: 100%;
+  height: 135px;
+  display: flex;
+  flex-direction: row;
+  background-color:#b0e0e5;
+  text-align: center;
+  justify-content: left;
+  text-decoration: none;
+  align-items: center;
+  box-shadow:inset 8px -20px 12px 16px rgb(0 89 255 / 10%), inset 7px -14px 16px rgb(0 128 255 / 10%);
+  font: italic small-caps  16px/2 cursive;
+}
+
+.divlogo {
+  width: 300px;
+  height: 110px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+.divlogo2 {
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.divlogologin {
+  width: 400px;
+  height: 150px;
+  margin: auto;
+}
+
+
+.logcad {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Rodape da pagina*/
+.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 25px;
+}
+
+/* Tabela do Menu*/
+.table {
+  display: flex;
+  flex: auto;
+  border-spacing:20px 5px ;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.classediv {
+  display: flex;
+  text-align: center;
+}
+
+
+
+
+.mapa {
+  background-color: red;
+  width: 97.5%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.divLogCad {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #8d920a;
+  text-align: center;
+}
+
+.divHome {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgHome {
+  border-radius: 5px;
+  width: 500px;
+  height: 710px;
+}
+
+.divCorpoH {
+  display: flex;
+  flex-direction:column;
+}
+
+.texto {
+  padding-top: 20px;
+  text-align: center;
+  width: 900px;
+  height: 400px;
+  margin: auto;
+  
+}
+
+.botao {
+  width: 332px;
+  margin-left: 5%;
+}
+
+.bpginicial {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Helvetica Neue","Arial","sans-serif";
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.divFormLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 396px;
+  height: 314px;
+  margin-top: 22px;
+  padding-top: 30px;
+}
+
+.FundoLogin {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 398px;
+  height: 400px;
+  border-radius: 8px;
+  margin: auto;
+  padding: 15px;
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.textologin {
+  text-align: center;
+  font-size: 16px;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.divTextoLogin {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 4em;
+  margin-left: 250px;
+  padding: 2px 0px 5px;
+  width: 396px;
+  height: 22px;
+}
+
+.divEsqueceuSenha {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 2px;
+}
+
+.textoesqueceusenha {
+  font-size: 14px;
+}
+
+.botaoCadastrar {
+  height: 50px;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.ancora {
+  color: white;
+  text-decoration: none;
+}
+
+.divFormCadastro {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.divFundoCadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 600px;
+  height: 770px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.divGlobal {
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;
+}
+
+.divMenu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.divtextocadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  height: 76px;
+  border-bottom: 1px solid #dddfe2;
+  margin: auto;
+}
+
+.textocadastro1 {
+  text-align: center;
+  font-size: 25px;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.textocadastro2 {
+  color: #606770;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+.divBotaoCadastro {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.divBotaoCadastrar {
+  display: flex;
+  justify-content: center;
+}
+
+.fundoPagLogCad {
+  background-color: #b0e0e5;
+  height: 950px;
+}
+
+.divlista {
+  border-radius: 8px;
+  width: 300px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  box-shadow: 12px 11px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    width: 310px;
+    transition: 100ms ease-in-out;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
+
+
+
+.divMenuCab {
+  display: flex;
+}
+
+.rowreverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+.ButtonNav {
+  position: relative;
+  width: 500px;
+}
+
+.divMenu1 {
+  width: 200px;
+  padding: 10px;
+  margin-right: 100px;
+  margin-left: 150px;
+  border-radius: 8px;
+  font-family: cursive;
+
+}
+
+.divMenu2 {
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: cursive;
+}
+
+.divMenu2:hover {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+
+
+}
+
+.divMenu1:hover {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+
+
+}
+
+nav{
+  text-align: center;
+  margin-top: 50px;
+  }
+
+  nav .Link{
+    text-decoration: none;
+    color: #c85454;
+    padding: 0 50px 10px 0;
+    font-size: 20px;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  nav .Link::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #b44e4e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  nav .Link:hover::after {
+    width: 100%;
+
+
+  }
+
+  input, select {
+    height: 8px;
+    border-radius: 8px;
+    padding: 20px 30px;
+    border: 1px solid #b0e0e5;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 2px rgb(168, 166, 166);
+
+    &:hover {
+     
+      border: 1px solid #49d0df;
+
+    }
+    &::placeholder{
+      color: #b0e0e5;
+    }
+
+    &:focus {
+      border: 2px solid #49d0df;
+      &::placeholder{
+        color: #33a4b1;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+  select {
+    height: 60px;
+  }
+
+  .inputEmailSenha {
+    width: 600px;
+    margin-bottom: 1em;
+  }
+
+  .inputEmailSenha [type="email"] {
+    margin-right: 10px;
+  }
+
+  .inputCampo1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+  }
+
+
+  .inputCidadeEstado {
+    margin-top: 1em;
+    width:50px ;
+  }
+
+  .inputEnderecoCep {
+    margin-top: 1em;
+    
+  }
+  #endereco {
+    margin-right: 10px;
+  }
+
+  .inputComplemento {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    width: 500px;
+  }
+
+  .imgContainer {
+    margin: auto;
+    width: 300px;
+    height: 130px;
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+
+      &:hover {
+        width: 310px;
+        height: 140px;
+        transition: 100ms ease-in-out;
+      }
+ 
+  }
+
+  .divContainer {
+    padding: 10px;
+    text-align: left;
+    font-family: sans-serif;
+  }
+
+  .ContainerEntidade{
+    display: flex;
+    
+  }
+
+  .divLogin {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: auto;
+    margin-bottom: 55px;
+  }
+  
+.divNomeEnt {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: monospace;
+  font-size: 20px;
+}  
+
+.imgPerfil {
+  margin: auto;
+  border-radius: 8px;
+  width: 700px;
+  height: 250px;
+}
+
+.divflex {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+}
+
+.infPerfil {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 7em;
+  font: italic small-caps bold 16px/2 cursive;
+}
+
+
+.divSobreONG {
+  margin-left: 180px;
+}
+
+.divBio {
+  display: flex;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  justify-content: center;
+  border: black solid 1px;
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+}
+
+.divcoluna {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
