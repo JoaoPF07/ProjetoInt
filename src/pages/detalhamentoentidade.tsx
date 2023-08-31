@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+ import { useState, useEffect } from "react";
 import Cabecalho from "../componentes/cabecalho";
 import InfoEntidade from "../componentes/infoentidade/infoentidade";
 import PerfilEntidade from "../componentes/perfilentidade/perfilentidade";
 import { Entidades } from "../types/entidade";
 import { api } from "../api";
 
-async function DetalhamentoEntidade() {
+function DetalhamentoEntidade() {
 
   const [entidades, setEntidades] = useState<Entidades[]>([]);
   const [loading, setLoading] = useState(false);
