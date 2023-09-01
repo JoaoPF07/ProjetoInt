@@ -85,9 +85,9 @@ function FormPostCadEntidade({ onAdd }: Props) {
         
         Email,
         Senha,
-        Nome,
-        Cnpj,
+        Nome,        
         Telefone,
+        Cnpj,
         Endereco,
         Complemento,
         Cidade,

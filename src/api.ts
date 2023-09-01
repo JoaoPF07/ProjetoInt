@@ -1,9 +1,8 @@
 import { Entidades } from "./types/entidade";
 
 export const api = {
-  
   CarregarEntidadeIndividual: async (id: string): Promise<Entidades> => {
-    let response = await fetch("http://localhost:3010/entidades/ID"  + id, {
+    let response = await fetch("http://localhost:3010/entidades/ID" + id, {
       method: "GET",
     });
     let json = await response.json();
@@ -12,12 +11,11 @@ export const api = {
 
   CarregarTodasEntidades: async () => {
     let response = await fetch("http://localhost:3010/entidades/listar", {
-    method: "GET",
+      method: "GET",
     });
     let json = await response.json();
     return json;
   },
-
 
   AdicionarEntidade: async (
     email: string,
@@ -34,16 +32,16 @@ export const api = {
     let response = await fetch("http://localhost:3010/entidades", {
       method: "POST",
       body: JSON.stringify({
-        email,
-        senha,
-        nome,
-        telefone,
-        cnpj,
-        endereco,
-        complemento,
-        cidade,
-        estado,
-        cep,
+        email: email,
+        senha: senha,
+        nome: nome,
+        telefone: telefone,
+        cnpj: cnpj,
+        endereco: endereco,
+        complemento: complemento,
+        cidade: cidade,
+        estado: estado,
+        cep: cep,
       }),
       headers: {
         "content-Type": "application/json",
@@ -83,12 +81,9 @@ export const api = {
           "Content-Type": "application/json; charset=utf-8",
         },
       });
-      let json = await response.json ();
+      let json = await response.json();
       console.log(json);
       return json;
     }
   },
-
-  
- 
 };
