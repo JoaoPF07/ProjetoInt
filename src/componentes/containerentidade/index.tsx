@@ -15,7 +15,7 @@ function ContainerEntidade() {
     setLoading(true);
     try {
       let response = await fetch(
-        "http://localhost:3010/entidades/listar" 
+        "https://maossolidarias.onrender.com/entidades/listar" 
       );
       let json = await response.json();
 

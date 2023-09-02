@@ -2,7 +2,7 @@ import { Entidades } from "./types/entidade";
 
 export const api = {
   CarregarEntidadeIndividual: async (id: string): Promise<Entidades> => {
-    let response = await fetch("http://localhost:3010/entidades/ID" + id, {
+    let response = await fetch("https://maossolidarias.onrender.com/entidades/ID" + id, {
       method: "GET",
     });
     let json = await response.json();
@@ -10,7 +10,7 @@ export const api = {
   },
 
   CarregarTodasEntidades: async () => {
-    let response = await fetch("http://localhost:3010/entidades/listar", {
+    let response = await fetch("https://maossolidarias.onrender.com/entidades/listar", {
       method: "GET",
     });
     let json = await response.json();
@@ -29,7 +29,7 @@ export const api = {
     estado: string,
     cep: string
   ) => {
-    let response = await fetch("http://localhost:3010/entidades", {
+    let response = await fetch("https://maossolidarias.onrender.com/entidades", {
       method: "POST",
       body: JSON.stringify({
         email: email,
@@ -54,7 +54,7 @@ export const api = {
   },
 
   AlterarEntidade: async (id: string) => {
-    let response = await fetch("http://localhost:3010/entidades" + id, {
+    let response = await fetch("https://maossolidarias.onrender.com/entidades" + id, {
       method: "PUT",
     });
     let json = await response.json();
@@ -62,7 +62,7 @@ export const api = {
   },
 
   DeletarEntidade: async (id: string) => {
-    let response = await fetch("http://localhost:3010/entidades" + id, {
+    let response = await fetch("https://maossolidarias.onrender.com/entidades" + id, {
       method: "DELETE",
     });
     let json = await response.json();
@@ -71,7 +71,7 @@ export const api = {
 
   Logar: async (username: string, password: string) => {
     {
-      let response = await fetch("http://localhost:3010/auth/login", {
+      let response = await fetch("https://maossolidarias.onrender.com/auth/login", {
         method: "POST",
         body: JSON.stringify({
           username,
