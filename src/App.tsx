@@ -19,7 +19,7 @@ function App() {
           <Route path="/cadastros" element={<Cadastros />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/entidades" element= {<Entidade/>}/>
-          <Route path="/perfil-entidade" element= {<DetalhamentoEntidade />}/>
+          <Route path="/perfil-entidade/ID/:ID" element= {<DetalhamentoEntidade />}/>
         </Routes>
       </div>
     </div>

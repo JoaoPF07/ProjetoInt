@@ -8,7 +8,8 @@ type Props = {
 function DadosEntidade({ dados }: Props) {
   return (
     <div className="ContainerEntidade">
-      <Link className="link" to={"/perfil-entidade"}>
+     
+      <Link className="link" to={`/perfil-entidade/ID/${dados.ID}`}>
 
       <div className="divlista">
         <div 
@@ -21,6 +22,9 @@ function DadosEntidade({ dados }: Props) {
         </div>
         <br />
         <div className="divContainer">
+        <div>
+           <p> Dados id = {dados.ID}</p>
+        </div>
         <b>Nome: {dados.nome}</b>
         <br />
         <b>Cidade:{dados.cidade}</b>

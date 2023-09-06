@@ -4,46 +4,61 @@ import InfoEntidade from "../componentes/infoentidade/infoentidade";
 import PerfilEntidade from "../componentes/perfilentidade/perfilentidade";
 import { Entidades } from "../types/entidade";
 import { api } from "../api";
+import { useParams } from "react-router-dom";
+
+
 
 function DetalhamentoEntidade() {
 
   const [entidades, setEntidades] = useState<Entidades[]>([]);
   const [loading, setLoading] = useState(false);
-  const [entidadesIds, setEntidadesIds] = useState<string[]>([])
 
-  useEffect(() => {
-    carregarEntidades(entidadesIds);
-  }, [entidadesIds]);
 
-  const carregarEntidades = async (ids: string[]) => {
+
+  const { ID } = useParams<{ ID: string }>();
+
+  
+
+  const handleCarregar = async (
+    id:string,
+  ) => {
     setLoading(true);
     try {
-      const promises = ids.map(async (id) => {
-        return api.CarregarEntidadeIndividual(id);
-    });
+      let json = await api.CarregarEntidadeIndividual (
+        id,
+      );
 
-    const responses = await Promise.all(promises);
-    const dataArray = responses.flatMap(response => Array.isArray(response) ? response : [response]);
+      if (Array.isArray(json)) {
+        setEntidades(json);
+      } else {
+        alert("Os dados carregados não são uma matriz.");
+      }
+  
+      setLoading(false);
+    } catch (e) {
+      alert("Falha no carregamento das informações");
+      setLoading(false);
+      console.error(e);
+    }
+  };
+ 
 
-    setEntidades(dataArray);
-    setLoading(false);
-  } catch (e) {
-    alert("Falha no carregamento das informações");
-    setLoading(false);
-    console.error(e);
-  }
-};
   
   return (
     <div>
       <Cabecalho />
-      {entidades.map((entidade, index) => (
-        <PerfilEntidade key={index} dados={entidade}/>
-      ))}
-       {entidades.map((item, index) => (
-        <InfoEntidade key={index} dados={item} />
-      ))}
-      
+      <div>
+        <p>teste de id: </p> {ID}
+        </div>
+        {entidades.map((entidade) => (
+          <div key={entidade.ID}>
+            <InfoEntidade entidade={entidade} />
+            <PerfilEntidade entidade={entidade} />
+          </div>
+        ))}
+
+
+     
 
       
     </div>
