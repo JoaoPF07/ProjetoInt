@@ -1,7 +1,6 @@
-import "../estilo/estilo.css";
+import "../style/estilo.css";
 import Carrossel from "../componentes/carrossel";
 import Cabecalho from "../componentes/cabecalho";
-import DadosEntidade from "../componentes/dadosentidade";
 import ContainerEntidade from "../componentes/containerentidade";
 
 function PaginaInicial() {

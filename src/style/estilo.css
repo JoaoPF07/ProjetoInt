@@ -491,6 +491,8 @@ nav{
   border-radius: 8px;
   width: 700px;
   height: 250px;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
 }
 
 .divflex {
@@ -529,4 +531,11 @@ nav{
   display: flex;
   flex-direction: column;
   margin-bottom: 3em;
+  margin: inherit;
+}
+
+.teste {
+  border: solid black 1px;
+  padding: 5px;
+  border-radius: 8px;
 }

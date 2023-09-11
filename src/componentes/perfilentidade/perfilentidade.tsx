@@ -1,6 +1,5 @@
 import { Entidades } from "../../types/entidade";
 import BioEntidade from "../bioentidade/bioentidade";
-import InfoEntidade from "../infoentidade/infoentidade";
 
 
 type Props = {

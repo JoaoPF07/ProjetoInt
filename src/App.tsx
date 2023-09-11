@@ -1,5 +1,5 @@
-import "./estilo/estilo.css";
-import { Link, Route, Routes } from "react-router-dom";
+import "./style/estilo.css";
+import { Route, Routes } from "react-router-dom";
 import NotFound from "./pages/notfound";
 import LoginEntidade from "./pages/loginentidade";
 import Cadastros from "./pages/cadastro";

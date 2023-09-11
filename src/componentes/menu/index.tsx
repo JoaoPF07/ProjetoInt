@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./../../estilo/estilo.css";
+import "./../../style/estilo.css";
 
 type Props = {
   menu1?: String;
