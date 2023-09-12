@@ -2,7 +2,10 @@
 export const api = {
   CarregarEntidadeIndividual: async (id: string) => {
     let response = await fetch(
-      "https://maossolidarias.onrender.com/entidades/ID/" + id);
+      "https://maossolidarias.onrender.com/entidades/ID/" + id,
+      {
+        method: "GET"
+      });
     let json = await response.json();
     return json;
   },
@@ -70,7 +73,7 @@ export const api = {
 
   DeletarEntidade: async (id: string) => {
     let response = await fetch(
-      "https://maossolidarias.onrender.com/entidades" + id,
+      "https://maossolidarias.onrender.com/entidades/remove-" + id,
       {
         method: "DELETE",
       }

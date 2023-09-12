@@ -31,48 +31,66 @@ function DetalhamentoEntidade() {
   return (
     <div>
       <Cabecalho />
+      {entidades.map((entidade) => (
+        <div className="divNomeEntidade">
+          <b>{entidade.nome}</b>
+        </div>
+      ))}
 
       <div
-          style={{
-            backgroundImage: `url('/imgdocontainer.png')`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-          className="imgPerfil"
-        ></div>
+        style={{
+          backgroundImage: `url('/imgdocontainer.png')`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="imgPerfil"
+      ></div>
       {entidades.map((entidade) => (
         <div key={entidade.ID}>
-         <div className="divflex">
-      <div className="infPerfil">
-        <div className="divcoluna">
-          <div className="teste">
-        <b>Email:{entidade.email}</b>
+          <div className="divflex">
+            <div className="infPerfil">
+              <div className="divcoluna">
+                <div className="divBorda">
+                  <b>EMAIL:{entidade.email}</b>
+                </div>
+                <br />
+                <div className="divBorda">
+                  <b>Telefone:{entidade.telefone}</b>
+                </div>
+                <br />
+                <div className="divBorda">
+                  <b>Cpnj:{entidade.cnpj}</b>
+                </div>
+              </div>
+            </div>
+            <div className="infPerfil">
+              <div className="divcoluna">
+                <div className="divBorda">
+                  <b>Cidade:{entidade.cidade}</b>
+                </div>
+                <br />
+                <div className="divBorda">
+                  <b>Estado: {entidade.estado}</b>
+                </div>
+                <br />
+                <div className="divBorda">
+                  <b>Endereço: {entidade.endereco}</b>
+                </div>
+              </div>
+            </div>
+            <div className="infPerfil">
+              <div className="divcoluna">
+                <div className="divBorda">
+                  <b>Cep: {entidade.cep}</b>
+                </div>
+                <br />
+                <div className="divBorda">
+                  <b>Complemento: {entidade.complemento}</b>
+                </div>
+              </div>
+            </div>
           </div>
-        <br />
-        <b>Telefone:{entidade.telefone}</b>
-        <br />
-        <b>Cpnj:{entidade.cnpj}</b>
-        </div>
-      </div>
-      <div className="infPerfil">
-        <div className="divcoluna">
-        <b>Cidade:{entidade.cidade}</b>
-        <br />
-        <b>Estado: {entidade.estado}</b>
-        <br />
-        <b>Endereço: {entidade.endereco}</b>
-      </div>
-      </div>
-      <div className="infPerfil">
-        <div className="divcoluna">
-        <b>Cep: {entidade.cep}</b>
-        <br />
-        <b>Complemento: {entidade.complemento}</b>
-        </div>
-
-      </div>
-    </div>
         </div>
       ))}
     </div>

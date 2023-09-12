@@ -1,16 +1,14 @@
 import { Entidades } from "../../types/entidade";
 import BioEntidade from "../bioentidade/bioentidade";
 
-
 type Props = {
-    dados: Entidades
-  }
+  dados: Entidades;
+};
 
-function PerfilEntidade ({ dados }: Props) {
-
-    return (
-        <div>
-            <div className="divNomeEnt">
+function PerfilEntidade({ dados }: Props) {
+  return (
+    <div>
+      <div className="divNomeEnt">
         <b>{dados.nome}</b>
       </div>
       <div className="divflex">
@@ -23,14 +21,12 @@ function PerfilEntidade ({ dados }: Props) {
           }}
           className="imgPerfil"
         ></div>
-        </div>
-        <BioEntidade/>
-      
-      <div className="divflex">
       </div>
+      <BioEntidade />
 
-        </div>
-    )
+      <div className="divflex"></div>
+    </div>
+  );
 }
 
 export default PerfilEntidade;

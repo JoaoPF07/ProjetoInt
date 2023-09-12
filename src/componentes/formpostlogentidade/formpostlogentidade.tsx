@@ -1,10 +1,12 @@
 import { ChangeEvent, useContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { api } from "../../api";
+import { UsuarioLogadoContext } from "../contexts/contextAuth";
 
 
 
 function FormPostLogEntidade() {
+  const UsuarioLogadoCtx = useContext (UsuarioLogadoContext)
   const navigate = useNavigate ();
   const [email, setEmail] = useState ("");
   const [senha, setSenha] = useState ("");
@@ -26,6 +28,7 @@ const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
 
     if (json.userId) {
     alert ('Bem-vindo ' + email);
+    UsuarioLogadoCtx?.setName(email)
     navigate('/');
   }else {
     alert ('Usuário/Senha não encontrado!')

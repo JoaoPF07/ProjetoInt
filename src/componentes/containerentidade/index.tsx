@@ -1,7 +1,7 @@
  import { useEffect, useState } from "react";
 import { api } from "../../api";
 import { Entidades } from "../../types/entidade";
-import DadosEntidade from "../dadosentidade";
+import DadosEntidade from "../dadosentidade/dadosentidade";
 
 function ContainerEntidade() {
   const [entidades, setEntidades] = useState<Entidades[]>([]);
@@ -11,6 +11,10 @@ function ContainerEntidade() {
     carregarEntidades();
   }, []);
     
+
+
+
+  
   const carregarEntidades = async () => {
     setLoading(true);
     try {
@@ -30,10 +34,12 @@ function ContainerEntidade() {
   };
 
   return (
+    <div>
     <div className="ContainerEntidade">
       {entidades.map((item, index) => (
         <DadosEntidade key={index} dados={item} />
       ))}
+    </div>
     </div>
   );
 }

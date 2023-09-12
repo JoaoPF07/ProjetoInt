@@ -7,11 +7,13 @@ import PaginaInicial from "./pages/paginainicial";
 import AreaEntidade from "./pages/areaentidade";
 import Entidade from "./pages/entidades";
 import DetalhamentoEntidade from "./pages/detalhamentoentidade";
+import { UsuarioLogadoProvider } from "./componentes/contexts/contextAuth";
 
 function App() {
   return (
     <div>
       <div>
+        <UsuarioLogadoProvider>
         <Routes>
           <Route path="/" element={<PaginaInicial />} />
           <Route path="/areadaentidade" element={<AreaEntidade />} />
@@ -21,6 +23,7 @@ function App() {
           <Route path="/entidades" element= {<Entidade/>}/>
           <Route path="/perfil-entidade/ID/:ID" element= {<DetalhamentoEntidade />}/>
         </Routes>
+        </UsuarioLogadoProvider>
       </div>
     </div>
   );
