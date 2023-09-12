@@ -188,9 +188,10 @@
 }
 
 .botaoCadastrar {
-  height: 50px;
-  margin-left: 130px;
+  
+  margin-left: 0px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .ancora {
