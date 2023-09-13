@@ -8,19 +8,19 @@ type Props = {
 
 function DadosEntidade({ dados }: Props) {
 
-  const deletarEntidade = async (id:string) => {
-    try {
-     await api.DeletarEntidade (id);
-    } catch(error) {
-      alert("Erro ao deletar a entidade:" + error)
-    }
-  }
+  // const deletarEntidade = async (id:string) => {
+  //   try {
+  //    await api.DeletarEntidade (id);
+  //   } catch(error) {
+  //     alert("Erro ao deletar a entidade:" + error)
+  //   }
+  // }
 
-  const handleDelete = () => {
-    if (dados && dados.ID) {
-      deletarEntidade(dados.ID);
-    }
-  }
+  // const handleDelete = () => {
+  //   if (dados && dados.ID) {
+  //     deletarEntidade(dados.ID);
+  //   }
+  // }
   return (
     <div className="ContainerEntidade">
       <Link className="link" to={`/perfil-entidade/ID/${dados.ID}`}>
@@ -49,7 +49,7 @@ function DadosEntidade({ dados }: Props) {
           </div>
         </div>
       </Link>
-      <button onClick={handleDelete}>Delete</button>
+      {/* <button onClick={handleDelete}>Delete</button> */}
 
 
             

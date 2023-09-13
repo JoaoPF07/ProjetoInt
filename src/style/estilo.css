@@ -188,10 +188,17 @@
 }
 
 .botaoCadastrar {
-  
   margin-left: 0px;
   margin-top: 10px;
   margin-bottom: 30px;
+  border-radius: 8px;
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+  color: white;
+  background-color: #a1d4d9;
+  border: none;
+
 }
 
 .ancora {
@@ -554,4 +561,8 @@ nav{
   font-size: 25px;
   
 
+}
+
+.divBotaoLogin {
+  margin-left: 7em;
 }

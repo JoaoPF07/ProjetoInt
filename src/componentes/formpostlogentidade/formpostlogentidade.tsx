@@ -53,7 +53,9 @@ const handleSenhaChange = (e: ChangeEvent<HTMLInputElement>) => {
              onChange={handleSenhaChange} 
              required/>
              </div>
-             <button onClick={Realizarlogin}>Logar</button>
+             <div className="divBotaoLogin">
+             <button className="botaoCadastrar" onClick={Realizarlogin}>Logar</button>
+             </div>
   </div>;
 }
 
